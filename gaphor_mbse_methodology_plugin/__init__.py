@@ -6,6 +6,7 @@ class MBSEMethodology(Service, ActionProvider):
 
     def __init__(self, element_menu):
         self.element_menu = element_menu
+        print(type(element_menu))
         if self.element_menu:
             element_menu.add_actions(self)
 
@@ -14,7 +15,7 @@ class MBSEMethodology(Service, ActionProvider):
 
     @action(
         name="MBSEMethodology",
-        label="Methodology Test",
+        label="Frank Was Here!",
         tooltip="Foobar",
     )
     def mbse_methodology_action(self):
